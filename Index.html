@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFA EDUCATION | Sophisticated Support</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a0e14;
+            --card-bg: #161b22;
+            --accent-gold: #c5a059;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 14, 20, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--glass);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--accent-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 10%;
+            background: radial-gradient(circle at top right, #1a1f2e, #0a0e14);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, var(--accent-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Features Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px 5%;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid var(--glass);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-gold);
+        }
+
+        .card i {
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        /* Action Buttons */
+        .btn-panic {
+            background: linear-gradient(45deg, #8b0000, #ff4b2b);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PFA EDUCATION</div>
+        <button class="btn-panic">SOS MODE</button>
+    </nav>
+
+    <section class="hero">
+        <h1>Psychological First Aid</h1>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+            Seni memberikan pertolongan pertama pada luka yang tak terlihat. 
+            Canggih, privat, dan berbasis bukti ilmiah.
+        </p>
+    </section>
+
+    <div class="features">
+        <div class="card">
+            <i class="fas fa-brain"></i>
+            <h3>Interactive Simulations</h3>
+            <p>Latihan skenario krisis nyata dengan AI. Pahami cara merespon tanpa merasa terhakimi.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-leaf"></i>
+            <h3>The Calm Zone</h3>
+            <p>Audio imersif 8D dan teknik grounding visual untuk menstabilkan emosi dalam hitungan detik.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-shield-heart"></i>
+            <h3>Look, Listen, Link</h3>
+            <p>Modul mikro-learning yang ringkas tentang prinsip utama PFA khusus untuk dinamika dewasa muda.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-fingerprint"></i>
+            <h3>Privacy Protocol</h3>
+            <p>Data terenkripsi penuh. Belajar
